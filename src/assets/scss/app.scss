@@ -5,8 +5,9 @@
 @import "./tools/tools.mixins";
 
 @import "./generic/generic.reset";
-@import "./generic/generic.box-sizing";
 @import "./generic/generic.fonts";
+@import "./generic/generic.box-sizing";
+@import "./generic/generic.animations";
 @import "./elements/elements.page";
 @import "./elements/elements.headings";
 @import "./elements/elements.links";

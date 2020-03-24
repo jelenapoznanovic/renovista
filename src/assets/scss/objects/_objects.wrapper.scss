@@ -16,3 +16,15 @@
     margin-left: auto;
   }
 }
+
+.wrapper--small {
+  max-width: 748px;
+}
+
+.wrapper--header {
+  padding: 43px 0 25px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
