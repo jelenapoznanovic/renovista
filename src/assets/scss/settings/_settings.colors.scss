@@ -1,18 +1,21 @@
 $color-white: #fff;
-$color-black: #000;
-$color-base: $color-black;
+$color-gold: #a68a1b; //.
+$color-gray: #757776; //.
+$color-dark: #333333; //.
+$color-base: $color-gray; //.
 
-$color-text: $color-base;
+$color-text: $color-base; //.
+$color-title: $color-dark; //.
 
-$color-text-active: $color-black;
+$color-text-active: $color-gray;
 $color-text-click: lighten($color-base, 10%);
-$color-link: $color-base;
+$color-link: $color-gold; //.
 
 $color-btn: $color-base;
 $color-btn-hover: darken($color-base, 5%);
 $color-btn-focus: darken($color-base, 10%);
 $color-btn-active: darken($color-base, 15%);
 
-$color-input: $color-black;
-$color-input-placeholder: rgba($color-black, .5);
-$color-border: $color-black;
+$color-input: $color-gray;
+$color-input-placeholder: rgba($color-gray, .5);
+$color-border: $color-dark;
