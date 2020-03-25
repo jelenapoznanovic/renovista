@@ -1,0 +1,11 @@
+.news-cards__item {
+    max-width: 380px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 35px;
+
+    @include min-screen($breakpoint-small) {
+        margin-bottom: 75px;
+    }
+}

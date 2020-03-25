@@ -11,3 +11,17 @@
 {% endif %}
 
 {% endmacro %}
+
+
+
+
+{% macro newsCard(image, title, text, href) %}
+
+<article class="news-cards__item">
+  <img src="assets/img/{{ image }}" alt="" >
+  <h3>{{ title }}</h3>
+  <p>{{ text }}</p>
+  <a href="{{ href }}">View project &gt;</a>
+</article>
+
+{% endmacro %}
