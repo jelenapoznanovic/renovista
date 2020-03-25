@@ -9,7 +9,17 @@
 
 <section class="news-cards">
     <div class="wrapper">
-        <div class="grid" bp="grid 6@md 4@lg">
+        
+        <header class="news-cards__header">
+            <div bp="grid">
+                <div bp="10@md 6@lg">
+                    <h2>Our latest projects</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </header>
+
+        <div bp="grid 6@md 4@lg">
 
             
                 {{ allMacros.newsCard('news-card-img1.jpg', 'Thornton Avenue', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'index.html') }}

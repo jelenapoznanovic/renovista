@@ -1,3 +1,7 @@
+.news-cards {
+    padding: 80px 0 120px;
+}
+
 .news-cards__item {
     max-width: 380px;
     width: 100%;
@@ -8,4 +12,8 @@
     @include min-screen($breakpoint-small) {
         margin-bottom: 75px;
     }
+}
+
+.news-cards__header {
+    margin-bottom: 50px;
 }
