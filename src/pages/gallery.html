@@ -1,0 +1,47 @@
+{% extends "layouts/default.html" %}
+
+{% set homepage = true %}
+{% set pagetitle = "Homepage" %}
+{% set bodyClass = "homepage" %}
+
+{% block content %}
+{% include "./components/header.html" -%}
+
+<section class="news-cards">
+    <div class="wrapper">
+        
+        <header class="news-cards__header">
+            <div bp="grid">
+                <div bp="10@md 6@lg">
+                    <h2>Our latest projects</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </header>
+
+        <div bp="grid 6@md 4@lg">
+
+            
+                {{ allMacros.newsCard('news-card-img1.jpg', 'Thornton Avenue', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'index.html') }}
+            
+            
+                {{ allMacros.newsCard('news-card-img2.jpg', 'St Albans Avenue', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'index.html') }}
+           
+            
+                {{ allMacros.newsCard('news-card-img3.jpg', 'Abinger Road', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'index.html') }}
+
+                {{ allMacros.newsCard('news-card-img4.jpg', 'saint aubin de scellon', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'index.html') }}
+
+                {{ allMacros.newsCard('news-card-img5.jpg', 'Queen Anne‘s Grove', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'index.html') }}
+
+                {{ allMacros.newsCard('news-card-img6.jpg', 'Queen Anne‘s Grove', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'index.html') }}
+           
+        </div>
+    </div>
+
+</section>
+
+
+{% include "./components/footer.html" -%}
+
+{% endblock %}
