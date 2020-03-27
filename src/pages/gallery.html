@@ -1,43 +1,59 @@
 {% extends "layouts/default.html" %}
 
 {% set homepage = true %}
-{% set pagetitle = "Homepage" %}
-{% set bodyClass = "homepage" %}
+{% set pagetitle = "Gallery" %}
+{% set bodyClass = "Gallery" %}
 
 {% block content %}
 {% include "./components/header.html" -%}
 
-<section class="news-cards">
-    <div class="wrapper">
-        
-        <header class="news-cards__header">
-            <div bp="grid">
-                <div bp="10@md 6@lg">
-                    <h2>Our latest projects</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<section>
+    <!-- MAIN SLIDES -->
+			<div class="slider">
+				<figure>
+                    <img src="assets/img/slider1.jpg" alt="One">
+                    <figcaption>Caption for image one. <a href="#one">Read more</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/slider2.jpg" alt="One">
+                    <figcaption>Caption for image two. <a href="#two">Read more</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/slider3.jpg" alt="One">
+                    <figcaption>Caption for image three. <a href="#three">Read more</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/slider4.jpg" alt="One">
+                    <figcaption>Caption for image four. <a href="#four">Read more</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/slider5.jpg" alt="One">
+                    <figcaption>Caption for image four. <a href="#four">Read more</a>
+                    </figcaption>
+                </figure>
+			</div>
+			
+			<!-- THUMBNAILS -->
+			<div class="slider-nav-thumbnails">
+				<div><img src="assets/img/thumbnails1.jpg" alt="One">
+				</div>
+				<div><img src="assets/img/thumbnails2.jpg" alt="Two">
+				</div>
+				<div><img src="assets/img/thumbnails3.jpg" alt="Three">
+				</div>
+				<div><img src="assets/img/thumbnails4.jpg" alt="Four">
+				</div>
+                <div><img src="assets/img/thumbnails5.jpg" alt="Five">
                 </div>
-            </div>
-        </header>
-
-        <div bp="grid 6@md 4@lg">
-
-            
-                {{ allMacros.newsCard('news-card-img1.jpg', 'Thornton Avenue', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'index.html') }}
-            
-            
-                {{ allMacros.newsCard('news-card-img2.jpg', 'St Albans Avenue', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'index.html') }}
-           
-            
-                {{ allMacros.newsCard('news-card-img3.jpg', 'Abinger Road', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'index.html') }}
-
-                {{ allMacros.newsCard('news-card-img4.jpg', 'saint aubin de scellon', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'index.html') }}
-
-                {{ allMacros.newsCard('news-card-img5.jpg', 'Queen Anne‘s Grove', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'index.html') }}
-
-                {{ allMacros.newsCard('news-card-img6.jpg', 'Queen Anne‘s Grove', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'index.html') }}
-           
-        </div>
-    </div>
+				<div><img src="assets/img/thumbnails6.jpg" alt="Six">
+				</div>
+				</div>
+			</div>
+      
 
 </section>
 
@@ -45,3 +61,6 @@
 {% include "./components/footer.html" -%}
 
 {% endblock %}
+
+
+

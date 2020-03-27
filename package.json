@@ -66,6 +66,7 @@
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
     "js-yaml": "^3.13.1",
+    "slick-carousel": "^1.8.1",
     "stylelint": "^11.1.1",
     "stylelint-config-recommended-scss": "^4.0.0",
     "stylelint-config-standard": "^19.0.0",
