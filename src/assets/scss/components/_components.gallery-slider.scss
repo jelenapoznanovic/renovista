@@ -1,0 +1,25 @@
+.slick-arrow {
+    font-size: 0;
+    background-color: #333;
+    opacity: 85%;
+    padding: 30px 30px 25px 30px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    z-index: 2;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.slick-prev {
+    background-image: url('../img/left-arrow-slider.png');
+    left: 0;
+}
+
+.slick-next {
+    background-image: url('../img/right-arrow-slider.png');
+    right: 0;
+}
