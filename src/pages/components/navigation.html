@@ -1,9 +1,9 @@
 <div class="header-main__top">
-    <a href="" class="logo"><img src="assets/img/logo.svg" alt=""></a>
+    <a href="index.html" class="logo"><img src="assets/img/logo.svg" alt=""></a>
     <nav class="nav-wrap">
         <ul>
-            <li class="is-active"><a href="">Home </a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li {% if homepage %}class="is-active" {% endif %}><a href="index.html">Home </a></li>
+            <li {% if gallery %}class="is-active" {% endif %}><a href="gallery.html">Gallery</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
         </ul>
