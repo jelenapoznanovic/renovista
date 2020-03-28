@@ -1,32 +1,36 @@
 // ON DOCUMENT READY
 $(document).ready(() => {
 
-     $('.slider').slick({
+     $('.gallery-slider__main').slick({
  	slidesToShow: 1,
  	slidesToScroll: 1,
  	arrows: true,
- 	fade: false,
- 	asNavFor: '.slider-nav-thumbnails',
+ 	fade: true,
+   infinite: true,
+ 	asNavFor: '.gallery-slider__thumbnails',
  });
 
- $('.slider-nav-thumbnails').slick({
- 	slidesToShow: 5,
+ $('.gallery-slider__thumbnails').slick({
+
  	slidesToScroll: 1,
- 	asNavFor: '.slider',
- 	dots: true,
- 	focusOnSelect: true
+ 	asNavFor: '.gallery-slider__main',
+  dots: false,
+  arrows: false,
+   focusOnSelect: true,
+   variableWidth: true,
+   infinite: true
  });
 
  // Remove active class from all thumbnail slides
- $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
+ $('.gallery-slider__thumbnails .slick-slide').removeClass('slick-active');
 
  // Set active class to first thumbnail slides
- $('.slider-nav-thumbnails .slick-slide').eq(0).addClass('slick-active');
+ $('.gallery-slider__thumbnails .slick-slide').eq(0).addClass('slick-active');
 
  // On before slide change match active thumbnail to current slide
- $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+ $('.gallery-slider__main').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
  	var mySlideNumber = nextSlide
- 	$('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
- 	$('.slider-nav-thumbnails .slick-slide').eq(mySlideNumber).addClass('slick-active');
+ 	$('.gallery-slider__thumbnails .slick-slide').removeClass('slick-active');
+ 	$('.gallery-slider__thumbnails .slick-slide').eq(mySlideNumber).addClass('slick-active');
 });
 });

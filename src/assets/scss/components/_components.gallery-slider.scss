@@ -1,3 +1,47 @@
+.gallery-slider {
+    position: relative;
+}
+
+.slick-list {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 30%;
+        background-color: #000;
+    }
+}
+
+.gallery-slider__main {
+    height: 100vh;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.gallery-slider__thumbnails {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .slick-slide  {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    img {
+        opacity: 0;
+    }
+}
+
 .slick-arrow {
     font-size: 0;
     background-color: #333;
@@ -12,6 +56,10 @@
     z-index: 2;
     height: 100px;
     box-sizing: border-box;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .slick-prev {
