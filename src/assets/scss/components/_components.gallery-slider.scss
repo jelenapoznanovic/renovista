@@ -7,36 +7,68 @@
         &::before {
             content: '';
             background-color: #000;
-            opacity: .2;
+            opacity: .3;
             position: absolute;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
-            transition: opacity 0.1s ease;
-        }
-
-        &.slick-active {
-            &::before {
-                opacity: 0;
-            }
+            transition: opacity 0.2s ease;
         }
     }
-
 }
 
 .slick-list {
     position: relative;
+}
 
-    &::before {
-        content: '';
+.gallery-slider__info {
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    h2 {
+        color: #fff;
+    }
+}
+
+.gallery-slider__info-box, 
+.gallery-slider__purchase-price {
+    background-color: rgba(#000, .8);
+}
+
+.gallery-slider__info-box {
+    position: absolute;
+    bottom: 75px;
+    white-space: nowrap;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+} 
+
+.gallery-slider__purchase-price {
+    position: absolute;
+    padding: 35px 40px;
+    max-height: 380px;
+    width: 270px;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .close {
         position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 30%;
-        background-color: #000;
+        top: 10px;
+        right: 10px;
+    }
+
+    .line {
+        width: 50px;
+        height: 1px;
+        background-color: #fff;
+        margin-bottom: 25px;
     }
 }
 
@@ -60,6 +92,20 @@
     .slick-slide  {
         background-size: cover;
         background-repeat: no-repeat;
+        cursor: pointer;
+        margin-left: 3px;
+        margin-right: 3px;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover, 
+        &.slick-current {
+            &::before {
+                opacity: 0;
+            }
+        }
     }
 
     img {
@@ -69,8 +115,8 @@
 
 .slick-arrow {
     font-size: 0;
-    background-color: #333;
-    opacity: 85%;
+    background-color: #000;
+    opacity: 80%;
     padding: 30px 30px 25px 30px;
     border: none;
     background-repeat: no-repeat;
@@ -81,9 +127,15 @@
     z-index: 2;
     height: 100px;
     box-sizing: border-box;
+    cursor: pointer;
+    transition: opacity .3s ease;
 
     &:focus {
         outline: none;
+    }
+
+    &:hover {
+        opacity: .5; 
     }
 }
 
