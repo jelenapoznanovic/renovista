@@ -22,16 +22,23 @@ $(document).ready(() => {
 		variableWidth: true
 	});
 
-	// Remove active class from all thumbnail slides
-	//  $('.gallery-slider__thumbnails .slick-slide').removeClass('slick-active');
-
-	//  // Set active class to first thumbnail slides
-	//  $('.gallery-slider__thumbnails .slick-slide').eq(0).addClass('slick-active');
-
-	// On before slide change match active thumbnail to current slide
 	$('.gallery-slider__main').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
 		var mySlideNumber = nextSlide
 		$('.gallery-slider__thumbnails .slick-slide').removeClass('slick-active');
 		$('.gallery-slider__thumbnails .slick-slide').eq(mySlideNumber).addClass('slick-active');
 	});
+
+	$('.gallery-slider__info-box').on('click', function(){
+
+		$(this).removeClass('is-visible');
+
+		$('.gallery-slider__purchase-price').addClass('is-visible');
+	})
+	
+	$('.gallery-slider__purchase-price .close').on('click', function(){
+
+		$(this).parents('.gallery-slider__purchase-price').removeClass('is-visible');
+
+		$('.gallery-slider__info-box').addClass('is-visible');
+	})
 });

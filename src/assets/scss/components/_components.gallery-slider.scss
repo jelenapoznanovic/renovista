@@ -47,21 +47,37 @@
     padding: 10px;
     text-transform: uppercase;
     font-size: 14px;
+    transform: translate(-1000px, 0);
+    transition: transform .3s ease;
+    cursor: pointer;
+    
+    &.is-visible {
+        transform: translate(0, 0);
+    
+    }
+    
 } 
 
 .gallery-slider__purchase-price {
     position: absolute;
     padding: 35px 40px;
-    max-height: 380px;
     width: 270px;
     left: 100px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-1000px, -50%);
+    transition: transform .3s ease;
+    
+    &.is-visible {
+        transform: translate(0px, -50%);
+
+    }
 
     .close {
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        padding: 10px;
     }
 
     .line {
@@ -120,7 +136,7 @@
     padding: 30px 30px 25px 30px;
     border: none;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 40% 50%;
     position: absolute;
     top: 50%;
     margin-top: -50px;
@@ -146,5 +162,6 @@
 
 .slick-next {
     background-image: url('../img/right-arrow-slider.png');
+    background-position: 50% 60%;
     right: 0;
 }
