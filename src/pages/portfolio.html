@@ -1,16 +1,16 @@
 {% extends "layouts/default.html" %}
 
-{% set gallery = true %}
-{% set pagetitle = "Gallery" %}
-{% set bodyClass = "gallery" %}
+{% set portfolio = true %}
+{% set pagetitle = "Portfolio" %}
+{% set bodyClass = "portfolio" %}
 
 {% block content %}
 {% include "./components/header.html" -%}
 
-<section class="gallery-slider">
-    <div class="gallery-slider__info">
-        <div class="gallery-slider__info-box is-visible">Project info</div>
-        <div class="gallery-slider__purchase-price">
+<section class="portfolio-slider">
+    <div class="portfolio-slider__info">
+        <div class="portfolio-slider__info-box is-visible">Project info</div>
+        <div class="portfolio-slider__purchase-price">
             <div class="close"><img src="assets/img/close-icon.png" alt=""></div>
             <h2>Thornton Avenue</h2>
             <p>Renovation and extension of a five bedroom semi-detached Victorian London home.</p>
@@ -30,7 +30,7 @@
         </div>
     </div>
     
-    <div class="gallery-slider__main">
+    <div class="portfolio-slider__main">
 
         <figure>
             <img src="assets/img/slider1.jpg" alt="One">
@@ -155,7 +155,7 @@
     </div>
     
     <!-- THUMBNAILS -->
-    <div class="gallery-slider__thumbnails">
+    <div class="portfolio-slider__thumbnails">
         <div style="background-image: url('assets/img/thumbnails1.jpg');"><img src="assets/img/thumbnails1.jpg" alt="One">
         </div>
         <div style="background-image: url('assets/img/thumbnails2.jpg');"><img src="assets/img/thumbnails2.jpg" alt="Two">

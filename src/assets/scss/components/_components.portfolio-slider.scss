@@ -1,4 +1,4 @@
-.gallery-slider {
+.portfolio-slider {
     position: relative;
 
     .slick-slide {
@@ -22,7 +22,7 @@
     position: relative;
 }
 
-.gallery-slider__info {
+.portfolio-slider__info {
     color: #fff;
     position: absolute;
     left: 0;
@@ -35,12 +35,12 @@
     }
 }
 
-.gallery-slider__info-box, 
-.gallery-slider__purchase-price {
+.portfolio-slider__info-box, 
+.portfolio-slider__purchase-price {
     background-color: rgba(#000, .8);
 }
 
-.gallery-slider__info-box {
+.portfolio-slider__info-box {
     position: absolute;
     bottom: 75px;
     white-space: nowrap;
@@ -58,7 +58,7 @@
     
 } 
 
-.gallery-slider__purchase-price {
+.portfolio-slider__purchase-price {
     position: absolute;
     padding: 35px 40px;
     width: 270px;
@@ -88,7 +88,7 @@
     }
 }
 
-.gallery-slider__main {
+.portfolio-slider__main {
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -99,7 +99,7 @@
     }
 }
 
-.gallery-slider__thumbnails {
+.portfolio-slider__thumbnails {
     position: absolute;
     left: 0;
     right: 0;
