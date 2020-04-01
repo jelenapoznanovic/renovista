@@ -24,11 +24,11 @@
 
 .portfolio-slider__info {
     color: #fff;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
+    // position: absolute;
+    // left: 0;
+    // top: 50%;
+    // transform: translateY(-50%);
+    // z-index: 2;
 
     h2 {
         color: #fff;
@@ -38,11 +38,12 @@
 .portfolio-slider__info-box, 
 .portfolio-slider__purchase-price {
     background-color: rgba(#000, .8);
+    z-index: 2;
 }
 
 .portfolio-slider__info-box {
     position: absolute;
-    bottom: 75px;
+    bottom: 50%;
     white-space: nowrap;
     padding: 10px;
     text-transform: uppercase;
@@ -52,7 +53,7 @@
     cursor: pointer;
     
     &.is-visible {
-        transform: translate(0, 0);
+        transform: translate(0, -70px);
     
     }
     
@@ -60,16 +61,35 @@
 
 .portfolio-slider__purchase-price {
     position: absolute;
-    padding: 35px 40px;
-    width: 270px;
-    left: 100px;
+    padding: 25px;
+    width: 225px;
+    left: 50%;
     top: 50%;
     transform: translate(-1000px, -50%);
     transition: transform .3s ease;
     
     &.is-visible {
-        transform: translate(0px, -50%);
+        transform: translate(-50%, -50%);
+        
+    }
+    
+    // h2 {
+    //     font-size: 18px;
+    // }
+    
+    // p {
+    //     font-size: 14px;
+    // }
+    
+    @include min-screen($breakpoint-tiny) {
+        width: 270px;
+        padding: 35px 40px;
+        left: 100px;
 
+        &.is-visible {
+            transform: translate(0, -50%);
+            
+        }
     }
 
     .close {
@@ -96,6 +116,8 @@
     
     img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -133,7 +155,7 @@
     font-size: 0;
     background-color: #000;
     opacity: 80%;
-    padding: 30px 30px 25px 30px;
+    padding: 20px;
     border: none;
     background-repeat: no-repeat;
     background-position: 40% 50%;
@@ -141,17 +163,23 @@
     top: 50%;
     margin-top: -50px;
     z-index: 2;
-    height: 100px;
+    height: 80px;
     box-sizing: border-box;
     cursor: pointer;
     transition: opacity .3s ease;
-
+    
     &:focus {
         outline: none;
     }
-
+    
     &:hover {
         opacity: .5; 
+    }
+    
+    @include min-screen($breakpoint-small) {
+        padding: 30px 30px 25px 30px;
+        height: 100px;
+
     }
 }
 
@@ -164,4 +192,10 @@
     background-image: url('../img/right-arrow-slider.png');
     background-position: 50% 60%;
     right: 0;
+}
+
+.slick-track,
+.slick-list,
+.slick-slide {
+    height: 100%;
 }
