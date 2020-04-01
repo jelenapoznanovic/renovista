@@ -14,3 +14,18 @@
 //   font-weight: 700;
 //   font-style: normal;
 // }
+
+
+@font-face {
+    font-family: 'NeueEinstellung';
+    src: url('../fonts/neueEinstellung-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/neueEinstellung-Regular.woff') format('woff'), url('../fonts/neueEinstellung-Regular.ttf')  format('truetype'), url('../fonts/neueEinstellung-Regular.svg#NeueEinstellung-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeueEinstellung';
+    src: url('../fonts/neueEinstellung-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/neueEinstellung-Bold.woff') format('woff'), url('../fonts/neueEinstellung-Bold.ttf')  format('truetype'), url('../fonts/nNeueEinstellung-Bold.svg#NeueEinstellung-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+  }
