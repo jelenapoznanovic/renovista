@@ -44,6 +44,12 @@
 
 .news-cards__header {
     margin-bottom: 50px;
+    text-align: center;
+
+    @include min-screen($breakpoint-small) {
+        text-align: left;
+    }
+
 
     h2 {
         font-weight: 700;
