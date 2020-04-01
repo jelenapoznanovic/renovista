@@ -21,6 +21,7 @@
         position: relative;
         padding-bottom: 20px;
         margin-bottom: 20px;
+        font-weight: 700;
         
         &::after {
             content: '';
@@ -43,4 +44,8 @@
 
 .news-cards__header {
     margin-bottom: 50px;
+
+    h2 {
+        font-weight: 700;
+    }
 }
