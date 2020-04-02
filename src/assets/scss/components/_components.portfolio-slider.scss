@@ -73,25 +73,17 @@
         
     }
     
-    // h2 {
-    //     font-size: 18px;
-    // }
-    
-    // p {
-    //     font-size: 14px;
-    // }
-    
     @include min-screen($breakpoint-tiny) {
         width: 270px;
         padding: 35px 40px;
         left: 100px;
-
+        
         &.is-visible {
             transform: translate(0, -50%);
             
         }
     }
-
+    
     .close {
         position: absolute;
         top: 0;
@@ -99,12 +91,20 @@
         cursor: pointer;
         padding: 10px;
     }
-
+    
     .line {
         width: 50px;
         height: 1px;
         background-color: #fff;
         margin-bottom: 25px;
+    }
+    
+    p {
+        font-size: 15px;
+        
+        @include min-screen($breakpoint-tiny) {
+            font-size: $base-font-size;
+        }
     }
 }
 
