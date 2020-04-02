@@ -72,6 +72,12 @@
         transform: translate(-50%, -50%);
         
     }
+    @media only screen and (max-device-width: 640px) and (orientation: landscape) {
+        max-width: 80%;
+        width: auto;
+        max-height: 80%;
+        overflow: auto;
+}
     
     @include min-screen($breakpoint-tiny) {
         width: 270px;
