@@ -56,9 +56,12 @@ $(document).ready(() => {
 
 $(window).on('load', function () {
 	$('#preloader').fadeOut();
-	$( window ).on('resize', function () {
-			const portfolioSliderHeight = $(window).outerHeight();
-			$('.portfolio-slider ').css('height', portfolioSliderHeight)
-		}
-	).trigger('resize');
+	const calcSize = () => {
+		const portfolioSliderHeight = $(window).outerHeight();
+		$('.portfolio-slider ').css('height', portfolioSliderHeight)
+	}
+	setTimeout(() => {
+		calcSize()
+	}, 1000);
+	$( window ).on('resize', calcSize).trigger('resize');
 });
