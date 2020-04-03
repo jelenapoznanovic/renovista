@@ -47,12 +47,10 @@ $(document).ready(function () {
 });
 $(window).on('load', function () {
   $('#preloader').fadeOut();
-  $(window).resize(onresize);
-
-  function onresize() {
+  $(window).on('resize', function () {
     var portfolioSliderHeight = $(window).outerHeight();
     $('.portfolio-slider ').css('height', portfolioSliderHeight);
-  }
+  }).trigger('resize');
 });
 
 },{}]},{},[1])

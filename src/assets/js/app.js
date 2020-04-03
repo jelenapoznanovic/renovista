@@ -54,12 +54,11 @@ $(document).ready(() => {
 	
 });
 
-$(window).on('load', function() {
+$(window).on('load', function () {
 	$('#preloader').fadeOut();
-	$( window ).resize(onresize);
-	function onresize() {
-		const portfolioSliderHeight = $(window).outerHeight();
-	
-		$('.portfolio-slider ').css('height', portfolioSliderHeight)
-	}
+	$( window ).on('resize', function () {
+			const portfolioSliderHeight = $(window).outerHeight();
+			$('.portfolio-slider ').css('height', portfolioSliderHeight)
+		}
+	).trigger('resize');
 });
