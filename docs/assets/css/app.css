@@ -1458,7 +1458,7 @@ a {
   transition: transform .3s ease; }
   .portfolio-slider__purchase-price.is-visible {
     transform: translate(-50%, -50%); }
-  @media only screen and (max-device-width: 640px) and (orientation: landscape) {
+  @media only screen and (max-device-width: 768px) and (orientation: landscape) {
     .portfolio-slider__purchase-price {
       max-width: 80%;
       width: auto;
