@@ -1,0 +1,27 @@
+{% macro arrow(src, customClass, href, arrowUp) %}
+
+{% if arrowUp %}
+<a class="arrow arrow--up {{ customClass }}" href="{{ href }}">
+  <img src="assets/img/{{ src }}.svg" alt="">
+</a>
+{% else %}
+<a class="arrow {{ customClass }}" href="{{ href }}">
+  <img src="assets/img/{{ src }}.svg" alt="">
+</a>
+{% endif %}
+
+{% endmacro %}
+
+
+
+
+{% macro newsCard(image, title, text, href) %}
+
+<article class="news-cards__item">
+  <img src="assets/img/{{ image }}" alt="" >
+  <h3>{{ title }}</h3>
+  <p>{{ text }}</p>
+  <a href="{{ href }}">View project &gt;</a>
+</article>
+
+{% endmacro %}

@@ -1,5 +1,10 @@
+{% import "../macros/macro.all.html" as allMacros %}
+
 {% include "../includes/meta-head.html" %}
 
+<div id="preloader" class="preloader">
+    <div class="preloader__inner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
 {% block content %}{% endblock %}
 
 {% include "../includes/meta-foot.html" -%}
