@@ -1408,7 +1408,8 @@ a {
   text-decoration: none; }
 
 .portfolio-slider {
-  position: relative; }
+  position: relative;
+  height: 100vh; }
   .portfolio-slider .slick-slide {
     position: relative; }
     .portfolio-slider .slick-slide::before {

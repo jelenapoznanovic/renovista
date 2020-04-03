@@ -44,10 +44,6 @@ $(document).ready(function () {
     // 	alert("Finished animating");
     //  });
   });
-  var outer = $(window).outerHeight();
-  var inner = $(window).innerHeight();
-  var thumbnailPosition = outer - inner;
-  alert(thumbnailPosition);
 });
 $(window).on('load', function () {
   $('#preloader').fadeOut();
