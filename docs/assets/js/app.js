@@ -47,6 +47,12 @@ $(document).ready(function () {
 });
 $(window).on('load', function () {
   $('#preloader').fadeOut();
+  $(window).resize(onresize);
+
+  function onresize() {
+    var portfolioSliderHeight = $(window).outerHeight();
+    $('.portfolio-slider ').css('height', portfolioSliderHeight);
+  }
 });
 
 },{}]},{},[1])
