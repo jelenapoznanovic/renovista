@@ -50,6 +50,11 @@ $(document).ready(() => {
 		// 	alert("Finished animating");
 		//  });
 	})
+
+	let outer = $(window).outerHeight()
+	let inner = $(window).innerHeight()
+	let thumbnailPosition = outer - inner;
+	alert(thumbnailPosition);
 });
 
 $(window).on('load', function() {

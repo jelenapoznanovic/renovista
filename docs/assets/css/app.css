@@ -1546,7 +1546,7 @@ a {
 
 .slick-next {
   background-image: url("../img/right-arrow-slider.png");
-  background-position: 50% 60%;
+  background-position: 60% 50%;
   right: 0; }
 
 .slick-track,
