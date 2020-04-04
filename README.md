@@ -1,3 +1,6 @@
+### Live version
+https://jelenapoznanovic.github.io/renovista.github.io/
+
 ### Features
 
 - **Sass support (SCSS)**  
@@ -36,5 +39,3 @@
 - Nunjucks: https://mozilla.github.io/nunjucks/templating.html
 
 
-### Live version
-https://jelenapoznanovic.github.io/renovista.github.io/
